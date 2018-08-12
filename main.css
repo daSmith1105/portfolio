@@ -1,0 +1,489 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    .font1 {
+        font-family: sans;
+    }
+    
+    .font2 {
+        font-family: cursive;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    a:hover {
+        cursor: pointer;
+    }
+    
+    .center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: "header" "hero" "intro" "technologies" "recent-work" "projects" "resume" "about" "colab" "footer";
+        justify-self: center;
+        width: 100vw;
+    }
+    /* header */
+    
+    .header {
+        grid-area: header;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 1400px;
+    }
+    
+    .logo-container {
+        float: left;
+        padding-left: 10%;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .logo-img {
+        height: 50px;
+        width: 50px;
+        transition: 0.5s;
+    }
+    
+    .logo-img:hover {
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        opacity: .7;
+    }
+    
+    .name {
+        font-size: 90%;
+        clear: both;
+        float: left;
+        padding-left: 10%;
+        margin-top: -.5em;
+    }
+    
+    .contact-btn-container {
+        float: right;
+        padding-right: 10%;
+        margin-top: -50px;
+    }
+    
+    .contact-btn {
+        font-size: 20px;
+        color: dodgerblue;
+        background-color: transparent;
+        border: 2px solid dodgerblue;
+        border-radius: 1em;
+        padding: .5em 1em;
+        transition: 0.5s;
+    }
+    
+    .contact-btn:hover {
+        color: white;
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+    /* hero */
+    
+    .hero {
+        grid-area: hero;
+        text-align: center;
+        width: 100vw;
+        padding: 1em;
+    }
+    
+    .main-heading {
+        font-size: 240%;
+        margin-bottom: 1em;
+    }
+    
+    .main-tag {
+        font-size: 120%;
+        margin-bottom: 1em;
+    }
+    
+    .hero-img {
+        width: 50%;
+        height: auto;
+        max-width: 270px;
+    }
+    /* intro */
+    
+    .intro {
+        grid-area: intro;
+        width: 100%;
+        max-width: 1200px;
+        text-align: center;
+    }
+    
+    .intro-topper {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin-top: 2em;
+    }
+    
+    .intro-inner-container {
+        background-color: dodgerblue;
+        color: white;
+        padding: 40px 5%;
+        padding-bottom: 140px;
+        text-align: center;
+    }
+    
+    .intro-text {
+        font-weight: bold;
+        font-size: 160%;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    .intro-description {
+        margin-top: 2em;
+        font-size: 120%;
+        width: 80%;
+        max-width: 700px;
+    }
+    /* technologies */
+    
+    .technologies {
+        grid-area: technologies;
+        margin-top: -100px;
+        width: 88%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 1em;
+        background-color: white;
+        z-index: 1;
+        padding: 1em;
+        padding-top: 1em;
+        text-align: center;
+    }
+    
+    .brackets {
+        color: dodgerblue;
+        font-size: 200%;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    
+    .technologies-text {
+        font-size: 120%;
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .bold {
+        font-size: 140%;
+        color: dodgerblue;
+    }
+    /* recent work */
+    
+    .recent-work {
+        grid-area: recent-work;
+        width: 100vw;
+        margin-top: 2em;
+        text-align: center;
+    }
+    
+    .recent-work-heading {
+        font-size: 160%;
+        margin-bottom: .5em;
+    }
+    
+    .recent-work-tag {
+        font-size: 120%;
+        margin-bottom: 3em;
+        width: 80%;
+        max-width: 600px;
+    }
+    /* projects */
+    
+    .projects {
+        grid-area: projects;
+        width: 100vw;
+    }
+    
+    .project {
+        width: 90%;
+        max-width: 500px;
+        background-color: lightgrey;
+        border-radius: 1em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    
+    .project:hover {
+        background-color: #bdbdbd;
+        cursor: pointer;
+    }
+    
+    .project-img {
+        width: 80%;
+        height: auto;
+        margin-top: 1em;
+        border-radius: 1em;
+    }
+    
+    .project-img:hover {
+        opacity: .7;
+        cursor: pointer;
+    }
+    
+    .repo-live {
+        margin-top: .5em;
+        margin-bottom: .5em;
+        width: 70%;
+    }
+    
+    .repo-live-text {
+        background-color: dodgerblue;
+        border-radius: 2em;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        margin-bottom: .5em;
+    }
+    
+    .repo-live-text a {
+        font-size: 120%;
+        margin-right: .5em;
+        margin-left: .5em;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .repo-live-text a:hover {
+        color: grey;
+    }
+    /* resume */
+    
+    .resume {
+        grid-area: resume;
+        width: 100vw;
+        background-color: dodgerblue;
+        height: 12em;
+        margin-top: 1em;
+    }
+    
+    .resume-inner-container {
+        position: relative;
+        top: -1em;
+        width: 88%;
+        max-width: 700px;
+        background-color: white;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        height: 8em;
+        padding: 1em;
+        padding-top: 3em;
+    }
+    
+    .width-contain {
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .resume-inner-container h3 {
+        font-size: 120%;
+        float: left;
+        width: 70%;
+    }
+    
+    .resume-link {
+        float: right;
+    }
+    
+    .resume-link img {
+        height: 50px;
+        width: 50px;
+        transition: 0.5s;
+    }
+    
+    .resume-link img:hover {
+        background-color: green;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* about */
+    
+    .about {
+        grid-area: about;
+        width: 100vw;
+        margin-top: 4em;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    .about h3 {
+        font-size: 160%;
+        margin-bottom: 1em;
+    }
+    
+    .about-text-container {
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    .about-text {
+        font-size: 110%;
+        text-align: left;
+    }
+    /* footer */
+    
+    .footer {
+        grid-area: footer;
+        width: 100%;
+        margin-top: 12em;
+        background-color: dodgerblue;
+        padding-top: 780px;
+        text-align: center;
+    }
+    /* INSIDE FOOTER - colab */
+    
+    .colab {
+        grid-area: colab;
+        width: 88%;
+        max-width: 700px;
+        background-color: #092b4c;
+        height: 20em;
+        margin-top: -55em;
+        padding: 1em;
+        padding-top: 2em;
+        border-radius: 1em;
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+    
+    .colab-width-container {
+        max-width: 400px;
+    }
+    
+    .colab-heading {
+        font-size: 140%;
+        margin-bottom: 1em;
+        color: white;
+    }
+    
+    .colab-text {
+        font-size: 120%;
+        color: white;
+    }
+    
+    .colab-btn {
+        font-size: 140%;
+        border: 2px solid dodgerblue;
+        border-radius: 1em;
+        color: dodgerblue;
+        background-color: transparent;
+        margin-top: 2em;
+        padding: .5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        transition: 0.5s;
+    }
+    
+    .colab-btn:hover {
+        color: white;
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+    /* back to footer */
+    
+    .footer-logo-container {
+        margin-top: 3em;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .footer-logo-img {
+        height: 50px;
+        width: 50px;
+        transition: 0.5s;
+        border-radius: .5em;
+        transition: 0.5s
+    }
+    
+    .footer-logo-img:hover {
+        height: 60px;
+        width: 60px;
+        opacity: .7;
+        cursor: pointer;
+    }
+    
+    .footer-tag {
+        margin-top: 3em;
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    .footer-tag p {
+        font-size: 140%;
+        color: white;
+    }
+    /* INSIDE FOOTER - social */
+    
+    .social {
+        width: 90%;
+        max-width: 300px;
+        margin-top: 4em;
+    }
+    
+    .social-link {
+        float: left;
+        margin-right: .3em;
+        margin-left: .3em;
+        transition: 0.5s;
+    }
+    
+    .social-link-first {
+        float: left;
+        margin-right: .3em;
+        transition: 0.5s;
+    }
+    
+    .social-link-last {
+        float: left;
+        margin-left: .3em;
+        transition: 0.5s;
+    }
+    
+    .social-link img,
+    .social-link-first img,
+    .social-link-last img {
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+    }
+    
+    .social-link img:hover,
+    .social-link-first img:hover,
+    .social-link-last img:hover {
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .copyright {
+        clear: both;
+        padding-top: 3em;
+    }
+    
+    .copyright p {
+        font-size: 100%;
+        color: white;
+    }
