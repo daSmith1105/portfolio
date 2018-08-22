@@ -338,23 +338,52 @@
         margin-bottom: 2em;
         text-align: center;
         padding: .5em;
+        position: relative;
     }
     
-    .project:hover {
-        background-color: #bdbdbd;
+    .project:hover  .project-img-text-container {
+        opacity: 1;
+    }
+
+    .project:hover .project-img{
+        opacity: 0.6;
         cursor: pointer;
     }
+
+    .project-img-text-container {
+        transition: .5s ease;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        position: absolute;
+        top: 6em;
+        left: 50%;
+    }
+
+    .text {
+        background-color: rgba(0,0,0,0.6);
+        border-radius: .5em;
+        color: rgba(255,255,255,0.7);
+        font-size: 150%;
+        padding-right: 1em;
+        padding-left: 1em;
+        width: 60vw;
+        max-width: 400px;
+        height: 3em;
+        padding-top: 1em;
+      }
     
     .project-img {
+        opacity: 1;
         width: 90%;
         height: auto;
         margin-top: 1em;
         border-radius: 1em;
-    }
-    
-    .project-img:hover {
-        opacity: .7;
-        cursor: pointer;
+        position: relative;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        position: relative;
     }
     
     .repo-live {
