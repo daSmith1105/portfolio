@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Smith - Portfolio</title>
+    <title>David A. Smith - Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Catamaran|Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,12 +24,14 @@
                     </a>
                 </div>
                 <div class="name">
-                    <span class="font2">David Smith</span>
+                    <span class="name-text">David A. Smith</span>
                 </div>
                 <div class="contact-btn-container">
-                    <button class="contact-btn">
-                        Say Hello
-                    </button>
+                    <a href="mailto:dasmith@gmail.com">
+                        <button class="contact-btn" >
+                            Say Hello
+                        </button>
+                    </a>
                 </div>
             </nav>
         </header>
@@ -45,11 +48,15 @@
                 <img class="intro-topper" src="./resources/topper.jpg" />
                 <div class="intro-inner-container">
                     <p class="intro-text center">
-                        Hi, I'm David.<br />Nice to meet you.
+                        <span class="larger">Hi, I'm David.</span>
+                            <br />
+                            Nice to meet you.
                     </p>
                     <p class="intro-description center">
-                        I am a recent graduate of the Thinkful web development curriculum and am excited to continue my journey in coding amazing applications for the web. I'm quietly confident, naturally curious, and continually seeking to increase my knowledge in everything
-                        I do.
+                        I am a recent graduate of the Thinkful Fullstack Web Development Program and am excited to continue my journey in coding amazing applications for the web. 
+                        <br /> <br />
+                        I'm quietly confident, naturally curious, and continually seeking to increase my knowledge in everything
+                        I do!
                     </p>
                 </div>
             </section>
@@ -60,72 +67,118 @@
                 </p>
                 <p class="technologies-text">I value simple content structures, clean design patterns, and thoughtful user interation components.</p>
                 <br />
-                <p class="technologies-text">I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <br />
                 <p class="bold">Frontend:</p>
-                <p class="technologies-text">HTML5, CSS3, Javascript, React, Redux</p>
+                <hr />
+                <div class="technologies-container center">
+                    <img class="technologies-img" src="./resources/html.png" alt="html"/>
+                    <img class="technologies-img" src="./resources/css.png" alt="css"/>
+                    <img class="technologies-img" src="./resources/js.png" alt="javascript"/>
+                    <img class="technologies-img" src="./resources/jquery.png" alt="jquery"/>
+                    <img class="technologies-img" src="./resources/react.png" alt="react"/>
+                    <img class="technologies-img" src="./resources/redux.png" alt="redux"/>
+                </div>
                 <br />
                 <p class="bold">Backend:</p>
-                <p class="technologies-text">Node, Express, Mongoose, MongoDB, MLab</p>
+                <hr />
+                <div class="technologies-container center">
+                    <img class="technologies-img" src="./resources/node.png" alt="node"/>
+                    <img class="technologies-img" src="./resources/express.png" alt="express"/>
+                    <img class="technologies-img" src="./resources/mongo.png" alt="mongoDB"/>
+                    <img class="technologies-img" src="./resources/mongoose.png" alt="mongoose"/>
+                    <img class="spacer" src="./resources/spacer.png" alt="blank space"/>
+                    <img class="technologies-img" src="./resources/mlab.png" alt="mLab"/>
+                </div>
                 <br />
-                <p class="bold">Testing and Assertion:</p>
-                <p class="technologies-text">Mocha, Chai, Enzyme</p>
+                <p class="bold">Testing and Deployment:</p>
+                <hr />
+                <div class="technologies-container center">
+                    <img class="technologies-img" src="./resources/mocha.png" alt="mocha"/>
+                    <img class="technologies-img" src="./resources/chai.png" alt="chai"/>
+                    <img class="technologies-img" src="./resources/enzyme.png" alt="enzyme"/>
+                    <img class="technologies-img" src="./resources/postman.png" alt="postman"/>
+                    <img class="technologies-img" src="./resources/travis.png" alt="travis"/>
+                    <img class="technologies-img" src="./resources/heroku.png" alt="heroku"/>
+                </div>
                 <br />
-                <p class="bold">Deployment and Integration:</p>
-                <p class="technologies-text">Travis CI, Heroku</p>
-                <br />
-                <p class="bold">Version Management:</p>
-                <p class="technologies-text">Github, Git</p>
+                <p class="bold">Versioning and Management:</p>
+                <hr />
+                <div class="technologies-container">
+                    <img class="technologies-img" src="./resources/git.png" alt="git"/>
+                    <img class="technologies-img" src="./resources/github1.png" alt="github"/>
+                    <img class="technologies-img" src="./resources/webpack.png" alt="webpack"/>
+                </div>
             </section>
-
+            <div class="line-spacer"></div>
             <section class="recent-work center">
-                <h3 class="recent-work-heading">My Recent Work</h3>
-                <br />
-                <p class="recent-work-tag center">
-                    A few of my recent projects.
-                </p>
+                <div class="recent-work-inner-container center">
+                    <h3 class="recent-work-heading">My Recent Work</h3>
+                    <p class="recent-work-tag center">
+                        A few of my recent projects:
+                    </p>
+                </div>
+                </section>
             </section>
 
             <section class="projects center">
                 <div class="project center">
-                    <a class="project-link" href="https://www.linkedin.com/in/david-smith-121165100/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
-                        <img class="project-img" src="./resources/guitar-quiz.png" alt="Project" />
+                    <a class="project-link" href="https://dasmith1105.github.io/entertain.me/" target="_blank" aria-label="entertain.me" title="entertain.me">
+                        <img class="project-img" src="./resources/entertain-me.png" alt="Project entertain.me" />
                     </a>
                     <div class="repo-live center">
                         <p class="repo-live-text">
-                            <a href="#">GitHub</a> | <a href="">Live Link</a>
+                            <a href="https://github.com/daSmith1105/entertain.me" target="_blank">
+                                GitHub
+                            </a> | 
+                            <a href="https://dasmith1105.github.io/entertain.me/" target="blank">
+                                Live Link
+                            </a>
                         </p>
                     </div>
+                    <h3 class="project-title">Entertain.Me</h3>
+                    <p class="project-desc">
+                            Finding local events is easy with entertain.me. Food, music, family events, and more display at the click of a button. 
+                            Target your searches by activity, location, and/or travel distance. Let's do something!
+                    </p>
                 </div>
                 <div class="project center">
-                    <a class="project-link" href="https://www.linkedin.com/in/david-smith-121165100/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
-                        <img class="project-img" src="./resources/entertain-me.png" alt="Project" />
+                    <a class="project-link" href="https://wishfulreading.herokuapp.com/" target="_blank" aria-label="wishful readeing" title="wishful reading">
+                        <img class="project-img" src="./resources/wishful-reading.png" alt="Project wishful reading" />
                     </a>
                     <div class="repo-live center">
                         <p class="repo-live-text">
-                            <a href="#">GitHub</a> | <a href="">Live Link</a>
+                            <a href="https://github.com/daSmith1105/book-app" target="_blank">
+                                GitHub
+                            </a> | 
+                            <a href="https://wishfulreading.herokuapp.com/">
+                                Live Link
+                            </a>
                         </p>
                     </div>
+                    <h3 class="project-title">Wishful Reading</h3>
+                    <p class="project-desc">
+                        Track the books you have always wanted to read with the Wishful Reading app. Add and edit your current list, and delete books as you are finished reading them.
+                        Can also be used to track books that you have already completed so you don't rebuy or reread.  
+                    </p>
                 </div>
                 <div class="project center">
-                    <a class="project-link" href="https://www.linkedin.com/in/david-smith-121165100/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
-                        <img class="project-img" src="./resources/wishful-reading.png" alt="Project" />
-                    </a>
-                    <div class="repo-live center">
-                        <p class="repo-live-text">
-                            <a href="#">GitHub</a> | <a href="">Live Link</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project center">
-                    <a class="project-link" href="https://www.linkedin.com/in/david-smith-121165100/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                    <a class="project-link" href="https://moodsense.herokuapp.com/" target="_blank" aria-label="moodsense" title="moodsense">
                         <img class="project-img" src="./resources/moodsense.png" alt="Project" />
                     </a>
                     <div class="repo-live center">
                         <p class="repo-live-text">
-                            <a href="#">GitHub</a> | <a href="">Live Link</a>
+                            <a href="https://github.com/daSmith1105/mood-tracker-client" target="_blank">
+                                GitHub
+                            </a> | 
+                            <a href="https://moodsense.herokuapp.com/" target="_blank">
+                                Live Link
+                            </a>
                         </p>
                     </div>
+                    <h3 class="project-title">Moodsense - Emotional Awareness Tracker</h3>
+                    <p class="project-desc">
+                        Your emotional health is important! Moodsense is a simple app allowing you to select your current mood, rate the intensity of those feelings, 
+                        and log an entry for later review. Information can be shared with family, medical professionals, or kept private. Record your mood whenever you choose.
+                    </p>
                 </div>
             </section>
 
@@ -143,10 +196,16 @@
             <section class="about center">
                 <h3>A bit about me</h3>
                 <div class="about-text-container center">
-                    <p class="about-text">
-                        Former music teacher turned programmer. I spent 8 years as a public school teacher working with students grades K-12 in general, instrumental, and vocal instruction. I always gravitated toward the electronic side trying to find ways to integrate technology
-                        and software into my lessons. When the NY educational job prospects took a turn I decided to make a move to Texas and recently made the move to persue my passion for coding and creation! Music and education/mentoring are still
-                        a big part of what I love to do, and I think my educational backgroud provides me a solid ground in communication and collaboration. I get excited to create amazing things and exceed the expectation.
+                        <span class="italic center"><span class="big-quote">"</span>From Music Educator to Programmer<span class="big-quote">"</span></span>
+                        <br /> <br />
+                        <p class="about-text center">
+                        For 8 years I worked as a public school teacher educating students grades K-12 in general, instrumental, and vocal music. 
+                        <br /><br />
+                        I have always found technology interesting, and looked to find ways of integrating software and  electronics into my lessons. 
+                        <br /> <br />
+                        When the New York educational job prospects took a turn, I decided to make a move to Texas and recently made the decision to persue my passion for coding and creation! 
+                        Music and education/mentoring are still a big part of what I love to do. I think my backgroud affords me an edge in communication and collaboration. 
+                        I get excited to create amazing things, and work hard to exceed the expectation.
                     </p>
                 </div>
             </section>

@@ -22,6 +22,11 @@
     a:hover {
         cursor: pointer;
     }
+
+    hr {
+        border-color: dodgerblue;
+        margin-bottom: 1em;
+    }
     
     .center {
         margin-right: auto;
@@ -38,6 +43,10 @@
         grid-template-areas: "header" "hero" "intro" "technologies" "recent-work" "projects" "resume" "about" "colab" "footer";
         justify-self: center;
         width: 100vw;
+    }
+
+    main {
+        margin-bottom: -80em;
     }
     /* header */
     
@@ -69,11 +78,17 @@
     }
     
     .name {
-        font-size: 90%;
         clear: both;
         float: left;
         padding-left: 10%;
         margin-top: -.5em;
+    }
+
+    .name-text {
+        font-size: 80%;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
     
     .contact-btn-container {
@@ -83,13 +98,15 @@
     }
     
     .contact-btn {
-        font-size: 20px;
+        font-size: 110%;
         color: dodgerblue;
         background-color: transparent;
         border: 2px solid dodgerblue;
         border-radius: 1em;
         padding: .5em 1em;
         transition: 0.5s;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
     }
     
     .contact-btn:hover {
@@ -107,20 +124,42 @@
     }
     
     .main-heading {
-        font-size: 240%;
+        font-size: 230%;
         margin-bottom: 1em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     
     .main-tag {
         font-size: 120%;
         margin-bottom: 1em;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
-    
+
     .hero-img {
-        width: 50%;
+        width: 54%;
         height: auto;
         max-width: 270px;
+        transition: .5s ease;
+        border-radius: 50%;
     }
+
+    .hero-img:hover {
+        animation:bounceOut 1s ease-out;
+        animation-iteration-count: 4;
+        border-radius: 50%;
+    }
+
+    @keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 10px rgba(30, 144, 255, .05); opacity:1; }
+        25%{ box-shadow: 0 0 0 40px rgba(30, 144, 255, .1); opacity:1; }
+        50%{ box-shadow: 0 0 0 80px rgba(30, 144, 255, .2); opacity:1; }
+        75%{ box-shadow: 0 0 0 40px rgba(30, 144, 255, .1); opacity:1; }
+        100%{ box-shadow: 0 0 0 20px rgba(30, 144, 255, .05); opacity:1; }
+}
     /* intro */
     
     .intro {
@@ -148,15 +187,26 @@
     .intro-text {
         font-weight: bold;
         font-size: 160%;
-        width: 80%;
+        width: 90%;
         max-width: 700px;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+    }
+
+    .larger {
+        font-size: 145%;
+        width: 100%;
     }
     
     .intro-description {
         margin-top: 2em;
         font-size: 120%;
         width: 80%;
-        max-width: 700px;
+        max-width: 600px;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
     /* technologies */
     
@@ -179,31 +229,86 @@
         font-size: 200%;
         font-weight: bold;
         margin-bottom: 1em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+    }
+    
+    .technologies-container {
+        width: 100%;
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1em;
+        text-align: center;
     }
     
     .technologies-text {
         font-size: 120%;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        width: 90%;
         max-width: 500px;
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     .bold {
-        font-size: 140%;
+        font-size: 160%;
         color: dodgerblue;
+        clear: both;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+    }
+
+    .technologies-img, .spacer {
+        width: 31%;
+        height: auto;
+        float: left;
+        margin-top: 1em;
+        margin-right:  1%;
+        margin-left: 1%;
+        transition: 0.5s;
+    }
+
+    .technologies-img:hover {
+        background-color: lightgrey;
+        opacity: .8;
+        border-radius: 50%;
+    }
+
+    .line-spacer {
+        width: 100%;
+        height: 10%vw;
+        clear: both;
+        margin-bottom: 4em;
     }
     /* recent work */
     
     .recent-work {
         grid-area: recent-work;
         width: 100vw;
-        margin-top: 2em;
         text-align: center;
+        background-color: dodgerblue;
+    }
+
+    .recent-work-inner-container {
+        width: 88%;
+        max-width: 700px;
+        background-color: white;
+        padding-top: 1em;
     }
     
     .recent-work-heading {
-        font-size: 160%;
-        margin-bottom: .5em;
+        font-size: 170%;
+        margin-bottom: .7em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     
     .recent-work-tag {
@@ -211,21 +316,28 @@
         margin-bottom: 3em;
         width: 80%;
         max-width: 600px;
+        padding-bottom: 1em;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-bottom: 3px solid dodgerblue;
     }
     /* projects */
     
     .projects {
         grid-area: projects;
-        width: 100vw;
+        width: 90%;
     }
     
     .project {
         width: 90%;
-        max-width: 500px;
+        max-width: 660px;
         background-color: lightgrey;
         border-radius: 1em;
         margin-bottom: 2em;
         text-align: center;
+        padding: .5em;
     }
     
     .project:hover {
@@ -234,7 +346,7 @@
     }
     
     .project-img {
-        width: 80%;
+        width: 90%;
         height: auto;
         margin-top: 1em;
         border-radius: 1em;
@@ -249,6 +361,9 @@
         margin-top: .5em;
         margin-bottom: .5em;
         width: 70%;
+        color: white;
+        width: 90%;
+        max-width: 300px;
     }
     
     .repo-live-text {
@@ -260,9 +375,13 @@
     }
     
     .repo-live-text a {
-        font-size: 120%;
+        font-size: 90%;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
         margin-right: .5em;
         margin-left: .5em;
+        padding: .5em 1em;
         color: white;
         transition: 0.5s;
     }
@@ -270,6 +389,36 @@
     .repo-live-text a:hover {
         color: grey;
     }
+
+    .project-title {
+        text-align: left;
+        text-decoration: none;
+        border-bottom: 3px solid dodgerblue;
+        font-size: 120%;
+        padding-top: 1em;
+        margin-bottom: .5em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+        width: 90%;
+        max-width: 740px;
+        margin-left: 5%;
+    }
+
+    .project-desc {
+        width: 90%;
+        font-size: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+
     /* resume */
     
     .resume {
@@ -291,10 +440,12 @@
         height: 8em;
         padding: 1em;
         padding-top: 3em;
+        padding-bottom: 8em;
     }
     
     .width-contain {
-        max-width: 300px;
+        width: 100%;
+        max-width: 400px;
         text-align: center;
     }
     
@@ -302,6 +453,9 @@
         font-size: 120%;
         float: left;
         width: 70%;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     
     .resume-link {
@@ -312,10 +466,13 @@
         height: 50px;
         width: 50px;
         transition: 0.5s;
+        border: 2px solid rgba(0,0,0,0);
+        margin-top: .5em;
     }
     
     .resume-link img:hover {
-        background-color: green;
+        background-color: dodgerblue;
+        border: 2px solid dodgerblue;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -330,18 +487,55 @@
     }
     
     .about h3 {
-        font-size: 160%;
+        font-size: 180%;
         margin-bottom: 1em;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+        text-decoration: none;
+        border-bottom: 3px solid dodgerblue;
+        width: 70%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .about-text-container {
-        width: 80%;
+        width: 100%;
         max-width: 700px;
+        text-align: center;
     }
-    
+
+    .big-quote {
+        font-size: 250%;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .italic {
+        width: 95%;
+        font-style: italic;
+        font-size: 130%;
+        font-family: 'Catamaran', sans-serif;
+        line-height: .8;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
     .about-text {
+        width: 80%;
+        max-width: 400px;
         font-size: 110%;
         text-align: left;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1em;
     }
     /* footer */
     
@@ -360,7 +554,7 @@
         width: 88%;
         max-width: 700px;
         background-color: #092b4c;
-        height: 20em;
+        height: 26em;
         margin-top: -55em;
         padding: 1em;
         padding-top: 2em;
@@ -377,24 +571,33 @@
         font-size: 140%;
         margin-bottom: 1em;
         color: white;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     
     .colab-text {
         font-size: 120%;
         color: white;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
     
     .colab-btn {
-        font-size: 140%;
+        font-size: 130%;
         border: 2px solid dodgerblue;
         border-radius: 1em;
         color: dodgerblue;
         background-color: transparent;
-        margin-top: 2em;
+        margin-top: 4vw;
         padding: .5em;
         padding-right: 1em;
         padding-left: 1em;
         transition: 0.5s;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     
     .colab-btn:hover {
@@ -428,12 +631,15 @@
     .footer-tag {
         margin-top: 3em;
         width: 80%;
-        max-width: 500px;
+        max-width: 600px;
     }
     
     .footer-tag p {
-        font-size: 140%;
+        font-size: 120%;
         color: white;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 1.5px;
+        line-height: -1px;
     }
     /* INSIDE FOOTER - social */
     
@@ -486,4 +692,7 @@
     .copyright p {
         font-size: 100%;
         color: white;
+        font-family: 'Special Elite', cursive;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
