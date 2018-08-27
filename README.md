@@ -1,14 +1,27 @@
-# Moodsense - Emotional Awareness Tracking
-
-Backend Repo
-https://github.com/daSmith1105/moodsense-server
+# Welcome to my Portfolio
 
 Live Site
-https://moodsense.herokuapp.com/
+https://dasmith1105.github.io/portfolio
 
-## API Documentation
+## What is this?
 
-The API for this project was created in the Representational Stae Transfer (REST) style. It is setup to track the note, moodentry array, and user in 3 different collections and calls on Mongooses .populate feature to pull in all the data via GET request to the endpoint /api/moosense.
+This is just a bit about me and some of the recent projects I have completed.
+
+## About me
+
+My name is David and I am a recent graduate of the Thinkful Full Stack Web Development program. I have learned a tremendous amount and am looking forward to learn more and obtaining new skills everyday!
+
+I currently work for an IT company in the Ft. Worth, TX area that specializes in custom video surveillance, access control, and alarm systems. It is a small company and there are many facets to my skillset in my current position. They include:
+
+* web development and admisitration of current company site
+* social media and marketing material creation (branding)
+* raspberry pi integration and development
+* providing technical assistance of both our company technicians while on the jobsite and customers that call in with issues of a technical nature
+* linux command line and bash implementation and troubleshooting
+
+I enjoy the technical challenges of my current position, but am look forwrd to streamlining my skillset toward web development and design.
+Thank you for taking the time to view my portfolio website! 
+
 
 ## Screenshots
 
@@ -36,23 +49,11 @@ Entry confirmation Page
 ![Mobile Library Page](https://image.ibb.co/gMh8oz/mood_log.png "mood_Log_Page")
 Mood Log Page
 
-## App Summary
+## Site Summary
 
-This app was created to track emotional states at any time.
-
-It is simple to use:
-1) select your current mood(s)
-2) write a note about how you are feeling
-3) confirm and save your mood entry to your personal mood log
-
-Review your mood data at anytime by clicking on your mood log link in the bottom left corner
+This site was creted to showcase some of the current projects I have completed and to validate my skillset.
 
 ## Technnologies Utilized:
 
 * HTML
 * CSS
-* React / Redux
-* Node.js / Express
-* Mongoose
-* MongoDB
-* Mocha / Chai / Enzyme
