@@ -3,6 +3,8 @@
 Live Site
 https://dasmith1105.github.io/portfolio
 
+Contact me: dasmith1105@gmail.com
+
 ## What is this?
 
 This is just a bit about me and some of the recent projects I have completed.
