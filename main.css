@@ -18,6 +18,10 @@
         text-decoration: none;
         transition: 0.5s;
     }
+
+    :hover {
+        cursor: pointer;
+    }
     
     a:hover {
         cursor: pointer;
@@ -302,13 +306,20 @@
         line-height: -1px;
     }
 
-    .technologies-img, .spacer {
+    .technologies-item {
         width: 31%;
         height: auto;
-        float: left;
         margin-top: 1em;
         margin-right:  1%;
         margin-left: 1%;
+        text-align: center;
+        float: left;
+    }
+
+    .technologies-img, .spacer {
+        width: 100%;
+        height: auto;
+        max-width: 120px;
         transition: 0.5s;
     }
 
@@ -746,9 +757,10 @@
     /* INSIDE FOOTER - social */
     
     .social {
-        width: 90%;
-        max-width: 300px;
+        width: 50%;
+        max-width: 170px;
         margin-top: 4em;
+        text-align: center;
     }
     
     .social-link {
