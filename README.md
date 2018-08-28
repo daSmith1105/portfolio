@@ -27,7 +27,7 @@ Thank you for taking the time to view my portfolio website!
 
 ## Screenshots
 
-![Mobile Landing Page](https://image.ibb.co/hEsU8U/portfolio_image.png" "portfolio_image")
+![Portfolio_mobile_image](https://image.ibb.co/hEsU8U/portfolio_image.png "portfolio_image")
 
 ## Site Summary
 
