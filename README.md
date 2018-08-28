@@ -17,7 +17,7 @@ I currently work for an IT company in the Ft. Worth, TX area that specializes in
 
 * web development and admisitration of current company site
 * social media and marketing material creation (branding)
-* raspberry pi integration and development
+* raspberry pi integration and development 
 * providing technical assistance of both our company technicians while on the jobsite and customers that call in with issues of a technical nature
 * linux command line and bash implementation and troubleshooting
 
