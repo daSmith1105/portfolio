@@ -27,29 +27,7 @@ Thank you for taking the time to view my portfolio website!
 
 ## Screenshots
 
-![Mobile Landing Page](https://image.ibb.co/gZ4Pve/landing.png "mobile_Landing")
-Landing Page
-
-![Mobile Add Page](https://image.ibb.co/d9A01K/login.png "login_Page")
-Login Page
-
-![Mobile Modify Page](https://image.ibb.co/hQtbae/signup.png "signup_Page")
-Signup Page  
-
-![Mobile Delete Page](https://image.ibb.co/mtW7gK/dashboard.png "dashboard_Page")
-Dashboard Page
-
-![Mobile Library Page](https://image.ibb.co/dXrZTz/mood_select.png "mood_Select_Page")
-Mood Selection Page
-
-![Mobile Library Page](https://image.ibb.co/dZongK/note_entry.png "note_Entry_Page")
-Note Entry Page
-
-![Mobile Library Page](https://image.ibb.co/bHvpve/entry_confirm.png "entry_Confirm_Page")
-Entry confirmation Page
-
-![Mobile Library Page](https://image.ibb.co/gMh8oz/mood_log.png "mood_Log_Page")
-Mood Log Page
+![Mobile Landing Page](https://image.ibb.co/hEsU8U/portfolio_image.png" "portfolio_image")
 
 ## Site Summary
 
