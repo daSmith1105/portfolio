@@ -428,8 +428,7 @@
     .project-stack {
         width: 12vw;
         max-width: 80px;
-        height: 12vw;
-        max-height: 80px;
+        height: auto;
         float: right;
         transition: .5s;
     }
@@ -437,8 +436,7 @@
     .project-stack:hover {
         background-color: lightgrey;
         opacity: .8;
-        border-radius: 50%;
-        transform: scale(1.8);
+        transform: scale(1.5);
     }
 
     .project-img {
